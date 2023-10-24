@@ -19,6 +19,7 @@ mongoose.connect(uri, {
     useUnifiedTopology: true, // Use the new Server Discover and Monitoring engine (avoid deprecation warning)
   })
   .then(() => {
+    console.log(process.env.NODE_ENV);
     console.log("Db is connected");
   })
   .catch((err) => {
@@ -39,12 +40,12 @@ app.use("/user/PostUsers/", PostUsers);
 app.use('/scorecard/UpdateScoreCard/', UpdateScoreCard);
 app.use('/scorecard/UploadScoreCard/', UploadScoreCard);
 
-if(process.env.NODE_ENV=='production'){
-  const path=require('path');
-  app.get('/',(req,res)=>{
-    app.use(express.static(path.resolve(__dirname,'Frontend','build')))
-    res.sendFile(path.resolve(__dirname,'Frontend','build','index.html'))
-  })
-}
+// if(process.env.NODE_ENV=='production'){
+//   const path=require('path');
+//   app.get('/',(req,res)=>{
+//     app.use(express.static(path.resolve(__dirname,'Frontend','build')))
+//     res.sendFile(path.resolve(__dirname,'Frontend','build','index.html'))
+//   })
+// }
 
 app.listen(PORT, () => console.log("Server has been started"));
