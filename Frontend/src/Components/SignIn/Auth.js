@@ -33,7 +33,7 @@ export const Auth = (props) => {
           email,
         });
         console.log(user);
-        const response = await axios.post('http://localhost:5000/scorecard/UploadScoreCard/', {UserId:user.uid,UserName:username});
+        const response = await axios.post('https://quizserver-app.vercel.app/scorecard/UploadScoreCard/', {UserId:user.uid,UserName:username});
         // props.setSuccess(true);
         signOut(auth2);
         navigate("/goLogin");

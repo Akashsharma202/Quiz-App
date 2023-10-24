@@ -19,7 +19,7 @@ function AdminUpload() {
     event.preventDefault();
     // You can send the form data to your server for processing here
     try{
-        const response = await axios.post('http://localhost:5000/question/PostQuestions/', formData);
+        const response = await axios.post('https://quizserver-app.vercel.app/uestion/PostQuestions/', formData);
         console.log('Response:', response.data);
         setFormData({language:'C',Question:"",Ans: '',Type: 1,Opt1: '',Opt2: '',Opt3: '',Opt4: '',});
     }catch(error){

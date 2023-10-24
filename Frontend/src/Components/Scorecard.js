@@ -8,7 +8,7 @@ export const Scorecard = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/scorecard/GetScoreCard",{params:{language:props.language}});
+                const response = await axios.get("https://quizserver-app.vercel.app/scorecard/GetScoreCard",{params:{language:props.language}});
                 setData(response.data);
                 console.log(data);
 

@@ -11,7 +11,7 @@ export const Test = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/question/GetQuestions", {
+        const response = await axios.get("https://quizserver-app.vercel.app/question/GetQuestions", {
           params: { language: props.language, Type: 1, Number: props.number },
         });
         setData(response.data);
