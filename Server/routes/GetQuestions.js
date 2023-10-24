@@ -17,10 +17,7 @@ router.get('/',async (req,res)=>{
                  result = await Questions.find({ Type: Type,Language:language }).skip(3).limit(7);
             }
             else{
-                const result = await Questions.aggregate([
-                    { $match: { Type: Type, Language: language } },
-                    { $sample: { size: 7 } }
-                  ]);
+                result = await Questions.find({ Type: Type,Language:language }).limit(7);
             }
         }
         res.status(200).json(result);

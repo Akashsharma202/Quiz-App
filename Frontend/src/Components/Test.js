@@ -15,6 +15,7 @@ export const Test = (props) => {
           params: { language: props.language, Type: 1, Number: props.number },
         });
         setData(response.data);
+        console.log(data)
       } catch (error) {
         console.error(error);
       }
@@ -44,7 +45,7 @@ export const Test = (props) => {
     } else {
       alert(`Quiz complete! Your score is: ${props.Score}`);
       // You can reset the quiz or navigate to another page here
-      const response=axios.put("http://localhost:5000/scorecard/UpdateScoreCard/",{language:props.language,score:props.Score,userId:props.user.uid});
+      const response=axios.put("https://quizserver-app.vercel.app/scorecard/UpdateScoreCard/",{language:props.language,score:props.Score,userId:props.user.uid});
       navigate("/scorecard");
     }
   };

@@ -45,7 +45,7 @@ export const Hardest = (props) => {
             alert(`Quiz complete! Your score is: ${props.Score}`);
             // You can reset the quiz or navigate to another page here
             console.log(props.language,props.Score,props.user.uid);
-            const response=axios.put("http://localhost:5000/scorecard/UpdateScoreCard/",{language:props.language,score:props.Score,userId:props.user.uid});
+            const response=axios.put("https://quizserver-app.vercel.app/scorecard/UpdateScoreCard/",{language:props.language,score:props.Score,userId:props.user.uid});
             navigate("/scorecard");
         }
     };
