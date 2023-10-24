@@ -1,0 +1,67 @@
+.form{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    width: 35vw;
+    margin-left: 32vw;
+    margin-top: 4%;
+    border: 2px solid grey;
+}
+.Inner{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    width: 80%;
+    margin-left: 10%;
+    height: 80%;
+    /* align-items:center; */
+}
+
+input{
+     align-items: center;
+     width: 100%;
+     border-radius: 7px;
+     height: 40px;
+}
+
+
+.Email{
+    margin-top: 15%;
+}
+
+.Password{
+    margin-top: 40px;
+}
+
+.SignIn{
+    margin-top: 30px;
+    font-family: poppins;
+    width: 70%;
+    margin-left: 15%;
+    height: 35px;
+    border-radius: 7px;
+}
+span,h2{
+    margin-top: 10px;
+    font-family: poppins;
+}
+
+
+p{
+   margin-top: 10%;
+   
+}
+
+
+.Google{
+    margin-top: 20px;
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    width: 70%;
+    margin-left: 15%;
+    height: 35px;
+    border-radius: 7px;
+}

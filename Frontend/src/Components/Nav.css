@@ -1,0 +1,9 @@
+.NavEnd{
+    /* background-color: aqua; */
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    border-color: white;
+}

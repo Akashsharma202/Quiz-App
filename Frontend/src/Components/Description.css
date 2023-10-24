@@ -1,0 +1,43 @@
+/* LanguageDescriptionPage.css */
+
+/* Main container */
+.Outer {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #007bff; /* Blue color for the title */
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  /* Disclaimer section */
+  .disclaimer {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  /* Button */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

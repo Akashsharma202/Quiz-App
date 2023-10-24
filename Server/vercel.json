@@ -1,0 +1,12 @@
+{
+    "builds":[{
+        "src":"./MongoAtlas.js",
+        "use":"@vercel/node"
+    }],
+    "routes":[
+        {
+            "src":"/.*",
+            "dest":"MongoAtlas.js"
+        }
+    ]
+}

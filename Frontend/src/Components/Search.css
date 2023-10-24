@@ -1,0 +1,42 @@
+/* LanguageSelectionForm.css */
+
+.language-selection-container {
+    text-align: center;
+    margin: 50px auto;
+    /* margin-top: 10%; */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    /* max-width: 300px; */
+    width: 40%;
+    /* margin: 0 auto; */
+  }
+  
+  .language-select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+
+
+  h1{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 400;
+  }
+  

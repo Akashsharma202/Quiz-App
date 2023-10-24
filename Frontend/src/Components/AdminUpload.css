@@ -1,0 +1,27 @@
+.admin-upload-form {
+    width: 50%;
+    margin: 3% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+  }
+  
+  .admin-upload-form select,
+  .admin-upload-form input[type="text"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  .admin-upload-form .form-group label {
+    font-weight: bold;
+  }
+  
+  .admin-upload-form .form-group .form-check-input {
+    margin-right: 5px;
+  }
+  
+  .admin-upload-form button {
+    margin-top: 10px;
+  }
+  
